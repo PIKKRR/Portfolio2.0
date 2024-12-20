@@ -496,7 +496,7 @@
           <div class="col-md-6">
             <div class="contact-form">
               <strong>Envíame un mensaje</strong>
-              <form name="contact-form" id="contactForm" action="https://formspree.io/f/xldeqkkq" method="POST" onsubmit="handleSubmit(event)">
+              <form name="contact-form" id="contactForm" action="https://formspree.io/f/xldeqkkq" method="POST" onsubmit="handleSubmit()">
     
                 <div class="form-group">
                   <label for="name">Nombre</label>
@@ -528,17 +528,12 @@
     
     <script>
       // Función que muestra un mensaje después de que el formulario se envíe
-      function handleSubmit(event) {
-        // Previene el envío del formulario para que podamos mostrar el mensaje primero
-        event.preventDefault();
-    
+      function handleSubmit() {
         // Muestra una alerta de éxito
-        alert("Enviado con éxito. ¡Gracias por tu mensaje!");
-    
-        // Ahora, enviamos el formulario a Formspree
-        event.target.submit();
+        alert("Mensaje enviado con éxito");
       }
     </script>
+    
     
     
 
