@@ -447,7 +447,7 @@
       </div>
     </section> <!-- End Facts Section -->
 
-    <!-- Contact Section -->
+    <!-- Contact Section
     <section id="contact" class="contact-section section-padding">
       <div class="container">
         <h2 class="section-title wow fadeInUp">Ponte en contacto</h2>
@@ -487,6 +487,60 @@
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- End Contact Section -->
+
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Ponte en contacto</h2>
+    
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-form">
+              <strong>Envíame un mensaje</strong>
+              <form name="contact-form" id="contactForm" action="https://formspree.io/f/xldeqkkq" method="POST" onsubmit="handleSubmit(event)">
+    
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" required="">
+                </div>
+    
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" required="">
+                </div>
+    
+                <div class="form-group">
+                  <label for="subject">Asunto</label>
+                  <input type="text" name="subject" class="form-control" id="subject">
+                </div>
+    
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
+                </div>
+    
+                <button type="submit" name="submit" class="btn btn-primary">Enviar Mensaje</button>
+              </form>
+            </div><!-- /.contact-form -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Contact Section -->
+    
+    <script>
+      // Función que muestra un mensaje después de que el formulario se envíe
+      function handleSubmit(event) {
+        // Previene el envío del formulario para que podamos mostrar el mensaje primero
+        event.preventDefault();
+    
+        // Muestra una alerta de éxito
+        alert("Mensaje enviado con éxito");
+    
+        // Ahora, enviamos el formulario a Formspree
+        event.target.submit();
+      }
+    </script>
+    
+    
 
 
 	<!-- Footer Section -->
