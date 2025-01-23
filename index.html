@@ -93,6 +93,7 @@
 						<li><a href="#home">Inicio</a></li>
 						<li><a href="#about">Sobre mí</a></li>
 						<li><a href="#resume">Resumen</a></li>
+            <li><a href="#projects">Proyectos</a></li>
 						<li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contacto</a></li>
 					</ul>
@@ -486,58 +487,52 @@
       </div><!-- /.container -->
     </section><!-- End Skills Section -->
 
-
-    
-
-
-    <!-- Facts Section -->
-    <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-      <div class="tt-overlay-bg">
-        <div class="container">
-        </div><!-- /.container -->
-      </div>
-    </section> <!-- End Facts Section -->
-
-    <!-- Contact Section
-    <section id="contact" class="contact-section section-padding">
+    <section id="projects" class="projects-section section-padding"> <!-- Start Projects Section-->
       <div class="container">
-        <h2 class="section-title wow fadeInUp">Ponte en contacto</h2>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="contact-form">
-              <strong>Envíame un mensaje</strong>
-              <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
-
-                <div class="form-group">
-                  <label for="name">Nombre</label>
-                  <input type="text" name="name" class="form-control" id="name" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="subject">Asunto</label>
-                  <input type="text" name="subject" class="form-control" id="subject">
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
-                </div>
-
-                <button type="submit" name="submit" class="btn btn-primary">Enviar Mensaje</button>
-              </form>
-            </div><!-- /.contact-form -->
-          </div><!-- /.col-md-6 -->
-
+        <h2 class="section-title wow fadeInUp">Proyectos</h2>
+        <div class="row" style="display: flex; gap: 20px;">
+          <!-- Primera columna -->
+          <div class="project-column" style="text-align: center; flex: 1;">
+            <h1 class="project-name">Dados App</h1>
+            <img src="/assets/images/kingdados.png" style="width: 235px; height: 235px;" alt="kingdados">
+            <div class="subcontainer">
+              <p><strong>Versión actual:</strong> 2.9</p>
+              <p>Aplicación Android diseñada como<br>complemento para el juego de mesa<br>físico de dados de póker.</p>
+              <p><strong>Características:</strong></p>
+              <ul>
+                <li>- Interfaz simple e intuitiva.</li>
+                <li>- De 2 a 20 jugadores.</li>
+                <li>- Listado editable de jugadores.</li>
+                <li>- Cálculo automático de puntuaciones.</li>
+                <li>- Top15 de mejores puntuaciones.</li>
+                <li>- Ranking de puntuaciones al finalizar partida.</li>
+                <li>- Reordenación de jugadores al repetir juego,<br>empezando por el ganador y respetando<br>sentido de turno.</li>
+              </ul>
+              <p><a href="https://github.com/PIKKRR/Dados_App" target="_blank"><strong>ENLACE A REPOSITORIO</strong></a></p>
+            </div>
           </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- End Contact Section -->
+      
+          <!-- Segunda columna -->
+          <div class="project-column" style="text-align: center; flex: 1;">
+            <h1 class="project-name">My Restaurant App</h1>
+            <img src="/assets/images/myres.png" style="width: 235px; height: 235px;" alt="proyecto2">
+            <p><strong>Versión actual:</strong> En desarrollo.</p>
+            <p>Aplicación Android diseñada para<br>gestionar carta, reservas y delivery<br>de un restaurante donde el propietario<br>tiene total libertad para modificar/agregar<br>anuncios, promociones y productos.</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+              <li>- Interfaz intuitiva.</li>
+              <li>- Sistema de Login/Auth Firebase.</li>
+              <li>- Anuncios editables "real time".</li>
+              <li>- Categorías/Productos editables "real time".</li>
+              <li>- Reserva de mesas.</li>
+              <li>- Delivery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
 
     <section id="contact" class="contact-section section-padding">
       <div class="container">
